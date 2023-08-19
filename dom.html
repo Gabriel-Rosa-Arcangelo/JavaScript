@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Manipulação</title>
+        <script>
+            function modifica(cor){
+               document.getElementById('quad').style.background = cor
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Manipulando estilo</h3>
+        <button type="button" onclick="modifica('#FF0000')">Vermelho</button>
+        <button type="button" onclick="modifica('#00FF00')">Verde</button>
+        <button type="button" onclick="modifica('#0000FF')">Azul</button>
+        <hr>
+        <div id="quad" style="border: solid 1px #000; width: 100px; height: 100px;"></div>
+    </body>
+</html>

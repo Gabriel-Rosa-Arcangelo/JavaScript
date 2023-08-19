@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fixação 5</title>
+
+        <script>
+            var objetos = Array('Cadeira','Impressora','Garfo')
+            
+            function add(){
+            var recupera = document.getElementById('txt').value 
+            if (recupera == ""){
+                alert("Informe um valor válido.")
+            }else if(recupera != ""){
+                if(objetos.indexOf(recupera)!== -1){
+                    alert("Objeto já foi adicionado")
+                }else{
+                    objetos.push(recupera)
+                    console.log(objetos)
+                    document.getElementById("txt").value=""
+                } 
+            }
+            }
+
+            function ord(){
+            objetos.sort()
+            console.log(objetos)
+            }
+          
+        </script>
+    </head>
+    <body>
+      <input type="text" id="txt">
+      <button type="button" onclick="add()">Adicionar</button>
+      <button type="button" onclick="ord()">Ordenar</button>
+    </body>
+</html>
